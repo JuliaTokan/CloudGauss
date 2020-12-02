@@ -2,8 +2,6 @@ import parcs.*;
 
 public class Gauss implements AM{
 	public void run(AMInfo info) {
-		System.out.println(info == null);
-		System.out.println(info.parent == null);
 		Matrix matrix = (Matrix)info.parent.readObject();
 		int currRow = info.parent.readInt();
 

@@ -63,6 +63,13 @@ public class Main implements AM {
 
         System.out.println("Waiting for result...");
         Matrix r = (Matrix) channel.readObject();
+        
+        for(int i = 0; i<r.getN(); i++{
+            for(int j = 0; j<r.getN(); j++{
+                System.out.print(r[i][j] + " ");
+            }
+            System.out.println();
+        }
 
         double[] result = new double[N];
         result[N - 1] = r.getB()[N - 1] / r.getA()[N - 1][N - 1];
